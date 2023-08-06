@@ -1,0 +1,94 @@
+<script>
+    window.document.onkeydown = function(e) {
+        if (!e) {
+            e = event;
+        }
+        if (e.keyCode == 27) {
+            lightbox_close();
+        }
+    }
+
+    function lightbox_open() {
+        let lightBoxVideo = document.getElementById("Video");
+        window.scrollTo(0, 0);
+        document.getElementById('light').style.display = 'block';
+        document.getElementById('fade').style.display = 'block';
+        lightBoxVideo.play();
+    }
+
+    function lightbox_close() {
+        let lightBoxVideo = document.getElementById("VisaChipCardVideo");
+        document.getElementById('light').style.display = 'none';
+        document.getElementById('fade').style.display = 'none';
+        lightBoxVideo.pause();
+    }
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamingstore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo">GAMINGSTORE</a>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="cta">Home</a></li>
+            <li><a href="aboutus.html" class="cta">About Us</a></li>
+            <li><a href="services.html" class="cta">Services</a></li>
+            <li><a href="gallery.html" class="cta">Gallery</a></li>
+            <li><a href="contacts.html" class="cta">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+<h5>LAIPNI LŪGTI GAMING PASAULĒ</h5>
+<p>Šeit būtu sākumlapa, kaut kāda info, reklāmas, utt</p>
+<main>
+    <div class="col-md-6 pb-2">
+            <img src="images/img.png" alt="">
+    </div>
+
+    <div class="col-md-6 pb-2">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success-emphasis">Introduction into gamers life</strong>
+                <h3 class="mb-0">BEST STREAMER HOUSE in LATVIA</h3>
+                <p class="mb-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem. Morbi blandit orci urna, eu congue magna faucibus at. In bibendum in mauris nec ultrices. Nunc et magna velit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem. Morbi blandit orci urna, eu congue magna faucibus at. In bibendum in mauris nec ultrices. Nunc et magna velit.</p>
+                <p class="mb-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci.   In bibendum in mauris nec ultrices. Nunc et magna velit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem. Morbi blandit orci urna, eu congue magna faucibus at. In bibendum in mauris nec ultrices. Nunc et magna velit.</p>
+                <div id="light">
+                    <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                    <video id="Video" width="600" controls>
+                        <source src="videos/video_home.mp4">
+                    </video>
+                </div>
+                <div id="fade" onClick="lightbox_close();"></div>
+                <div>
+                    <a href="#" onclick="lightbox_open();">Watch video</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+
+<footer>
+    <h5>Gamingstore for Everyone</h5>
+    <p>info@gamingstore.lv</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <div class="subscribe-form">
+        <form action="#">
+            <input type="text" name="EmailAdress" placeholder="Enter Your email">
+            <button type="submit">Subscribe</button>
+        </form>
+
+    </div>
+</footer>
+</body>
+</html>
