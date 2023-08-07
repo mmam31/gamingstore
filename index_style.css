@@ -92,7 +92,7 @@ nav ul li a:hover{
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 3px;
     background-color: #2C3E50;
     color: black;
 }
@@ -209,7 +209,7 @@ tr:nth-child(even) {
     padding-bottom: 10px;
 }
 
-.subscribe-form input {
+.subscribe-form .input {
     font-size: 18px;
     color: #000;
     border: none;
@@ -406,57 +406,16 @@ tr:nth-child(even) {
     text-align: center;
 }
 .img-home{
-    padding-left: 60px;
-}
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    padding-left: 50px;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #30aa04;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #45a049;
-}
 
-.container-message{
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
 
-}
-.container-home {
-    position: relative;
-    max-width: 800px; /* Maximum width */
-    margin: 0 auto; /* Center it */
-    padding-bottom: 20px;
-}
 
-.container-home .content {
-    position: absolute; /* Position the background text */
-    bottom: 20px; /* At the bottom. Use top:0 to append it to the top */
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-    width: 100%; /* Full width */
-    padding: 20px; /* Some padding */
-}
+
+
+
 
 
 
