@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-
 * {
     box-sizing: border-box;
 }
@@ -56,7 +55,6 @@ header{
     font-weight: 900;
     padding-left: 100px;
     padding-bottom: 15px;
-    font-size: x-large;
 }
 
 nav ul{
@@ -94,7 +92,7 @@ nav ul li a:hover{
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 3px;
     background-color: #2C3E50;
     color: black;
 }
@@ -211,7 +209,7 @@ tr:nth-child(even) {
     padding-bottom: 10px;
 }
 
-.subscribe-form input {
+.subscribe-form .input {
     font-size: 18px;
     color: #000;
     border: none;
@@ -406,232 +404,21 @@ tr:nth-child(even) {
 .to-gallery{
     position: relative;
     text-align: center;
-    padding-bottom: 50px;
 }
 .img-home{
-    padding-left: 60px;
-}
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    padding-left: 50px;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #30aa04;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #45a049;
-}
 
-.container-message{
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
 
-}
-.container-home {
-    position: relative;
-    max-width: 800px; /* Maximum width */
-    margin: 0 auto; /* Center it */
-    padding-bottom: 20px;
-}
 
-.container-home .content {
-    position: absolute; /* Position the background text */
-    bottom: 20px; /* At the bottom. Use top:0 to append it to the top */
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-    width: 100%; /* Full width */
-    padding: 20px; /* Some padding */
-}
-.contacts {
-    background-color: #919537;
-    padding: 10px;
-    color: #F0F1EC;
-    border-radius: 5px;
-}
 
-p .material-symbols-outlined {
-    font-size: 24px;
-    margin-right: 5px;
-    vertical-align: middle;
-    color: #D5D6B7;
-}
-.img-map{
-    width: 100%;
-    /*height: 400px;*/
-    size: auto;
-    padding-top: 28px;
-    border-radius: 5px;
-}
-.services {
-    position: relative;
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-.frame{
-    width: 600px;
-    height: 350px;
 
-}
-.list{
-    list-style-type: square;
-    position: relative;
-    background: #ec9b64;
-    margin-top: 45px;
-    border-radius: 5px;
-    height: 300px;
-    width: 300px;
-    padding-top: 40px;
-    padding-left: 40px;
-}
-.sq {
-    list-style-type: circle;
-}
-.img-services{
-    position: relative;
-    width: 100%;
-    float: top;
-}
-.text-center{
-    text-align: center;
-}
-.section{
-    position: relative;
-    width: 100%;
-    padding-top: 40px;
-}
-.extra-services{
-    position: relative;
-    text-align: center;
-    padding-bottom: 50px;
-}
 
-div.rent {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
-div.rent:hover {
-    /*border: 1px solid #777;*/
-    box-shadow: 2px 2px 5px #AEAEAE;
-}
 
-div.rent img {
-    width: 100%;
-    height: auto;
-}
 
-* {
-    box-sizing: border-box;
-}
 
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 33.33%;
-}
 
-@media only screen and (max-width: 700px) {
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
 
-@media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
-    }
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.desc {
-    padding: 5px;
-    text-align: left;
-    font-weight: bold;
-}
-
-.price {
-    text-align: left;
-    font-weight: bold;
-}
-
-.price-before {
-    text-align: left;
-    font-weight: bold;
-    text-decoration: line-through;
-}
-
-.price-after {
-    text-align: left;
-    font-weight: bold;
-    color: red;
-}
-
-.price-small {
-    font-size: 16px;
-    font-weight: normal;
-    font-style: italic;
-}
-
-.fa {
-    font-size: 20px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 25%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-youtube {
-    background: #bb0000;
-    color: white;
-}
-
-.fa-instagram {
-    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
-    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
-    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
-    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
-    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
-    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
-    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
-    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-    color: white;
-}
-
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
