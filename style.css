@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+
 * {
     box-sizing: border-box;
 }
@@ -405,6 +406,7 @@ tr:nth-child(even) {
 .to-gallery{
     position: relative;
     text-align: center;
+    padding-bottom: 50px;
 }
 .img-home{
     padding-left: 60px;
@@ -478,9 +480,158 @@ p .material-symbols-outlined {
     padding-top: 28px;
     border-radius: 5px;
 }
+.services {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.frame{
+    width: 600px;
+    height: 350px;
 
+}
+.list{
+    list-style-type: square;
+    position: relative;
+    background: #ec9b64;
+    margin-top: 45px;
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+.sq {
+    list-style-type: circle;
+}
+.img-services{
+    position: relative;
+    width: 100%;
+    float: top;
+}
+.text-center{
+    text-align: center;
+}
+.section{
+    position: relative;
+    width: 100%;
+    padding-top: 40px;
+}
+.extra-services{
+    position: relative;
+    text-align: center;
+    padding-bottom: 50px;
+}
 
+div.rent {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
+div.rent:hover {
+    /*border: 1px solid #777;*/
+    box-shadow: 2px 2px 5px #AEAEAE;
+}
 
+div.rent img {
+    width: 100%;
+    height: auto;
+}
 
+* {
+    box-sizing: border-box;
+}
 
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 33.33%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.desc {
+    padding: 5px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.price {
+    text-align: left;
+    font-weight: bold;
+}
+
+.price-before {
+    text-align: left;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.price-after {
+    text-align: left;
+    font-weight: bold;
+    color: red;
+}
+
+.price-small {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.fa {
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 25%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
